@@ -6,13 +6,35 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Lab',
+      title: 'Flutter Lab 3',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Flutter Lab'),
+          title: Text('Flutter Lab 3'),
         ),
         body: Container(
-
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Icon(Icons.phone),
+                  Container(child: Text('CALL'))
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Icon(Icons.navigation),
+                  Container(child: Text('ROUTE'))
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Icon(Icons.share),
+                  Container(child: Text('SHARE'))
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
